@@ -56,6 +56,19 @@ public final class SecurityBuilder {
 				break;
 			}
 		}
+		
+		System.out.println();
+		
+		for(byte i = Byte.MIN_VALUE;i<= Byte.MAX_VALUE;i++){
+			if(i%16 == 0){
+				System.out.println();
+			}
+//			System.out.println("send "+ i +" = " + recv_mapping.get(i));
+			System.out.print(recv_mapping.get(i) + ",");
+			if(i==Byte.MAX_VALUE){
+				break;
+			}
+		}
 	}
 
 	//---------------------------------------------------
