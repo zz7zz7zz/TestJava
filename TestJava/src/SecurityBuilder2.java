@@ -7,7 +7,10 @@ import java.util.Random;
  */
 public final class SecurityBuilder2 {
 	
-	private static final String SECRET = "浪淘沙·李煜\r帘外雨潺潺，春意阑珊，罗衾不耐五更寒。梦里不知身是客，一晌贪欢。\r独自莫凭栏，无限江山，别时容易见时难。流水落花春去也，天上人间。";
+	private static final String SECRET = ""
+			+ "<<浪淘沙>> 李煜"
+			+ "帘外雨潺潺，春意阑珊，罗衾不耐五更寒。梦里不知身是客，一晌贪欢。"
+			+ "独自莫凭栏，无限江山，别时容易见时难。流水落花春去也，天上人间。";
 
 	private static final void generate2(String key){
 		
@@ -59,7 +62,7 @@ public final class SecurityBuilder2 {
 		}
 		System.out.print("\r\n");
 	}
-	
+	 
 	//---------------------------------------------------
 	public static void main(String[] args) {
 		generate2(SECRET);
